@@ -21,7 +21,7 @@ const lessonCards: LessonCard[] = [
     badgeAlt: "Week 1",
     accent: "#FE001A",
     dividerColor: "border-[#FE001A]/20",
-    checkIcon: "/icons/check-red.png",
+    checkIcon: "/icons/check-red1.png",
     items: [
       "Step-by-step intro to bitcoin and crypto",
       "How to buy bitcoin & other crypto",
@@ -49,7 +49,7 @@ const lessonCards: LessonCard[] = [
     badgeAlt: "Week 3",
     accent: "#FE001A",
     dividerColor: "border-[#FE001A]/20",
-    checkIcon: "/icons/check-red.png",
+    checkIcon: "/icons/check-red1.png",
     items: [
       "Gas fees and blockchain networks",
       "Swaps, bridges, staking",
