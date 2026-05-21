@@ -26,19 +26,20 @@ const resources: ResourceItem[] = [
     iconAlt: "Exchanges icon",
   },
   {
-    title: "Airdrops, staking & yield farming",
-    iconSrc: "/bonus-resources/airdrops.png",
-    iconAlt: "Airdrops icon",
+    title: "Proof of Stake & Proof of Work",
+    iconSrc: "/bonus-resources/proof-of-stake.png",
+    iconAlt: "Proof of stake icon",
   },
+  
   {
     title: "Winning patterns from early crypto projects",
     iconSrc: "/bonus-resources/patterns.png",
     iconAlt: "Patterns icon",
   },
   {
-    title: "Proof of Stake & Proof of Work",
-    iconSrc: "/bonus-resources/proof-of-stake.png",
-    iconAlt: "Proof of stake icon",
+    title: "Airdrops, staking & yield farming",
+    iconSrc: "/bonus-resources/airdrops.png",
+    iconAlt: "Airdrops icon",
   },
   {
     title: "Longing vs shorting in crypto trading",
@@ -83,7 +84,7 @@ export default function BonusResourcesSection() {
 
   return (
     <>
-      <section className="bg-white px-[20px] py-[3px] lg:hidden">
+      <section className="bg-white px-[20px] py-[14px] lg:hidden">
         <div className="mx-auto w-full max-w-[375px]">
           <p className="text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
             FOR EXTRA KNOWLEDGE

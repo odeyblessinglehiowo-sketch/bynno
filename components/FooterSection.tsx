@@ -25,14 +25,14 @@ const communityLinks = [
   {
     label: "TikTok",
     icon: "/icons/social-tiktok.png",
-    href: "https://www.tiktok.com/@usebynno?_r=1&_t=ZS-96EmEoTmD5O",
+    href: "https://www.tiktok.com/@UseBynno",
   },
   {
     label: "Facebook",
     icon: "/icons/social-facebook.png",
-    href: "https://www.facebook.com/share/1EF2hSS5vx/",
+    href: "https://www.facebook.com/UseBynno/",
   },
-  { label: "Telegram", icon: "/icons/social-telegram.png", href: "https://t.me/useBynno" },
+  { label: "Telegram", icon: "/icons/social-telegram.png", href: "https://telegram.com/UseBynno" },
   { label: "WhatsApp", icon: "/icons/social-whatsapp.png", href: "#" },
 ];
 
@@ -40,15 +40,15 @@ const bottomIcons = [
   { icon: "/icons/social-x1.png", href: "https://www.x.com/UseBynno", label: "X" },
   {
     icon: "/icons/social-tiktok2.png",
-    href: "https://www.tiktok.com/@usebynno?_r=1&_t=ZS-96EmEoTmD5O",
+    href: "https://www.tiktok.com/@UseBynno",
     label: "TikTok",
   },
   {
     icon: "/icons/social-facebook3.png",
-    href: "https://www.facebook.com/share/1EF2hSS5vx/",
+    href: "https://www.facebook.com/UseBynno/",
     label: "Facebook",
   },
-  { icon: "/icons/social-telegram4.png", href: "https://t.me/useBynno", label: "Telegram" },
+  { icon: "/icons/social-telegram4.png", href: "https://telegram.com/UseBynno", label: "Telegram" },
   { icon: "/icons/social-whatsapp5.png", href: "#", label: "WhatsApp" },
 ];
 
