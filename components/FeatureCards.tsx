@@ -67,7 +67,7 @@ export default function FeaturesSection() {
   return (
     <>
       <section className="bg-white lg:hidden">
-        <div className="mx-auto w-full max-w-[375px] px-[20px] py-[10px]">
+        <div className="mx-auto w-full max-w-[375px] px-[20px] py-[60px]">
           <div className="flex flex-col gap-[16px]">
             {features.map((feature) => (
               <article
@@ -95,7 +95,7 @@ export default function FeaturesSection() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto hidden w-[1390px] px-[44px] pb-22 pt-[6px] lg:block lg:px-[50px] lg:pt-[42px]">
+      <section className="relative z-10 mx-auto hidden max-w-[4500px] px-[44px] pb-22 pt-[6px] lg:block lg:px-[50px] lg:pt-[42px]">
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 lg:gap-15">
           {features.map((feature) => (
             <div
@@ -113,7 +113,7 @@ export default function FeaturesSection() {
               </div>
 
               <p
-                className={`mx-auto mt-3 ${feature.titleWidthClassName} text-[16px] leading-[1.23] tracking-[-0.02em] text-[#4c4c4c] transition-colors duration-200 group-hover:text-[#000510] sm:text-[17px]`}
+                className={`mx-auto mt-3 ${feature.titleWidthClassName} text-[16px] leading-[1.23] tracking-[0.03em] text-[#4c4c4c] transition-colors duration-200 group-hover:text-[#000510] sm:text-[17px]`}
               >
                 {feature.title}
               </p>

@@ -86,7 +86,7 @@ export default function BonusResourcesSection() {
     <>
       <section className="bg-white px-[20px] py-[14px] lg:hidden">
         <div className="mx-auto w-full max-w-[375px]">
-          <p className="text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
             FOR EXTRA KNOWLEDGE
           </p>
 
@@ -142,7 +142,7 @@ export default function BonusResourcesSection() {
           </div>
 
           <div className="mt-[18px] flex flex-col gap-[10px]">
-            <label className="flex h-[50px] items-center gap-[12px] rounded-[10px] border border-black/10 bg-white px-[14px] shadow-[0_10px_24px_rgba(0,0,0,0.05)] transition-all duration-200 focus-within:border-[#FE001A] focus-within:shadow-[0_10px_28px_rgba(254,0,26,0.10)]">
+            <label className="flex h-[50px] items-center gap-[12px] rounded-[10px] border border-black/10 bg-white px-[14px] shadow-[0_10px_24px_rgba(0,0,0,0.05)] transition-all duration-200 focus-within:border-[#FE001A] focus-within:shadow-[0_10px_28px_rgba(254,0,26,0.90)]">
               <Image
                 src="/bonus-resources/emai1l.png"
                 alt="Email icon"
@@ -161,7 +161,7 @@ export default function BonusResourcesSection() {
               type="button"
               className="h-[48px] rounded-[10px] bg-[#FE001A] px-[20px] text-[16px] font-bold text-white shadow-[0_10px_24px_rgba(254,0,26,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e50017] active:translate-y-0 active:scale-[0.98]"
             >
-              <span className="font-bold tracking-[0.03em]">Start Free Now</span>
+              <span className="font-bold tracking-[0.03em]">Learn Free Now</span>
             </button>
 
             <p className="text-[12px] italic leading-[1.35] tracking-[0.02em] text-[#444548]">
@@ -171,10 +171,10 @@ export default function BonusResourcesSection() {
         </div>
       </section>
 
-      <section className="hidden bg-white py-[58px] lg:block">
-        <div className="mx-auto w-full max-w-[1450px] px-[40px] lg:px-[80px]">
-          <div className="max-w-[414px]">
-            <p className="text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+      <section className="hidden bg-white py-[18px] lg:block">
+        <div className="mx-auto w-full max-w-[4450px] px-[40px] lg:px-[80px]">
+          <div className="max-w-[1414px]">
+            <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
               FOR EXTRA KNOWLEDGE
             </p>
 
@@ -192,7 +192,7 @@ export default function BonusResourcesSection() {
                 rel="noopener noreferrer"
                 className="block"
               >
-                <article className="group flex h-[100px] items-center gap-[16px] rounded-[12px] bg-white px-[15px] py-[20px] shadow-[0_12px_50px_rgba(15,23,42,0.08),0_42px_10px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_28px_65px_rgba(15,23,42,0.10),0_55px_120px_rgba(15,23,42,0.08)] active:scale-[0.99]">
+                <article className="group flex h-[100px] items-center gap-[16px] rounded-[12px] bg-white px-[15px] py-[20px] shadow-[0_12px_50px_rgba(15,23,42,0.08),0_8px_10px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_28px_35px_rgba(15,23,42,0.10),0_55px_120px_rgba(15,23,42,0.08)] active:scale-[0.99]">
                   <div className="flex h-[60px] w-[60px] shrink-0 items-center justify-center overflow-hidden rounded-[10px]">
                     <Image
                       src={resource.iconSrc}
@@ -203,7 +203,7 @@ export default function BonusResourcesSection() {
                     />
                   </div>
 
-                  <span className="block min-w-0 flex-1 text-[18px] font-semibold leading-[1.25] tracking-[0.04em] text-[#444548] transition-colors duration-200 group-hover:text-[#000510]">
+                  <span className="block min-w-0 flex-1 text-[18px] font-medium leading-[1.25] tracking-[0.04em] text-[#444548] transition-colors duration-200 group-hover:text-[#000510]">
                     {resource.title}
                   </span>
                 </article>
@@ -232,8 +232,8 @@ export default function BonusResourcesSection() {
                 type="button"
                 className="appearance-none h-[52px] rounded-[8px] bg-[#FE001A] px-[26px] text-[20px] font-bold text-white shadow-[0_10px_24px_rgba(254,0,26,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e50017] active:translate-y-0 active:scale-[0.98]"
               >
-                <span className="font-bold tracking-[0.03em]">
-                  Start Free Now
+                <span className="font-semibold tracking-[0.04em] text-[18px]">
+                  Learn Free Now
                 </span>
               </button>
             </div>

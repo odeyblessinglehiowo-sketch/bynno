@@ -127,23 +127,23 @@ export default function GamesSection() {
 
 function MobileGamesSection() {
   return (
-    <section className="bg-white px-[20px] py-[3px] lg:hidden">
+    <section className="bg-white px-[20px] py-[43px] lg:hidden">
       <div
         className="relative mx-auto w-full max-w-[375px] overflow-hidden rounded-[20px]"
         style={sectionStyle}
       >
         <div className="mx-auto w-full px-[20px] py-[24px]">
-          <div className="mx-auto max-w-[335px] text-center">
-            <p className="text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-              LEARN BY PLAYING
-            </p>
+          <div className="max-w-[335px]">
+  <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+    LEARN BY PLAYING
+  </p>
 
-            <h2 className="mt-[13px] text-[26px] font-bold leading-[1.09] tracking-[0.02em] text-[#000510]">
-              Fun Crypto Games
-              <br />
-              Collect Coins As You Play
-            </h2>
-          </div>
+  <h2 className="mt-[13px] text-[26px] font-bold leading-[1.09] tracking-[0.02em] text-[#000510]">
+    Fun Crypto Games
+    <br />
+    Collect Coins As You Play
+  </h2>
+</div>
 
           <div className="mt-[48px] flex flex-col gap-[18px]">
             {games.map((game) => {
@@ -252,21 +252,21 @@ function DesktopGamesSection() {
   return (
     <section className="hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]">
       <div
-        className="relative mx-auto w-full max-w-[1280px] overflow-hidden rounded-[40px]"
+        className="relative mx-auto w-full max-w-[4500px] overflow-hidden rounded-[40px]"
         style={sectionStyle}
       >
-        <div className="mx-auto flex min-h-[780px] w-full flex-col items-center px-[20px] py-[44px] sm:px-[28px] sm:py-[56px] lg:px-[40px] lg:py-[66px]">
-          <div className="mx-auto max-w-[832px] text-center">
-            <p className="text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-              LEARN BY PLAYING
-            </p>
+        <div className="mx-auto flex min-h-[780px] max-w-[1432px] flex-col px-[20px] py-[44px] sm:px-[28px] sm:py-[56px] lg:px-[80px] lg:py-[66px]">
+  <div className="max-w-[832px]">
+    <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+      LEARN BY PLAYING
+    </p>
 
-            <h2 className="mt-[12px] text-[clamp(2.4rem,1.3vw,1.8rem)] font-bold leading-[1.76] tracking-[0.04em] text-[#000510]">
-              Fun Crypto Games
-              <br />
-              Collect Coins As You Play
-            </h2>
-          </div>
+    <h2 className="mt-[12px] text-[clamp(2.4rem,1.3vw,1.8rem)] font-bold leading-[1.76] tracking-[0.04em] text-[#000510]">
+      Fun Crypto Games
+      <br />
+      Collect Coins As You Play
+    </h2>
+  </div>
 
           <div className="mt-[34px] grid w-full gap-[20px] xl:grid-cols-4 xl:justify-items-center">
             {games.map((game) => {
@@ -350,7 +350,7 @@ function DesktopGamesSection() {
             })}
           </div>
 
-          <div className="mt-[34px] flex flex-wrap justify-center gap-[16px]">
+          <div className="mt-[34px] flex flex-wrap justify-center gap-[24px]">
             <a
               href={HOME_HREF}
               className="inline-flex h-[52px] items-center justify-center rounded-[8px] bg-[#FE001A] px-[24px] text-[20px] font-bold text-white shadow-[0_10px_24px_rgba(254,0,26,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e50017] active:translate-y-0 active:scale-[0.98]"

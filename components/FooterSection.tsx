@@ -32,7 +32,7 @@ const communityLinks = [
     icon: "/icons/social-facebook.png",
     href: "https://www.facebook.com/UseBynno/",
   },
-  { label: "Telegram", icon: "/icons/social-telegram.png", href: "https://telegram.com/UseBynno" },
+  { label: "Telegram", icon: "/icons/social-telegram.png", href: "https://www.t.me/useBynno" },
   { label: "WhatsApp", icon: "/icons/social-whatsapp.png", href: "#" },
 ];
 
@@ -48,7 +48,10 @@ const bottomIcons = [
     href: "https://www.facebook.com/UseBynno/",
     label: "Facebook",
   },
-  { icon: "/icons/social-telegram4.png", href: "https://telegram.com/UseBynno", label: "Telegram" },
+  { icon: "/icons/social-telegram4.png", 
+    href: "https://www.t.me/useBynno", 
+    label: "Telegram" },
+
   { icon: "/icons/social-whatsapp5.png", href: "#", label: "WhatsApp" },
 ];
 
@@ -244,7 +247,7 @@ function DesktopFooterSection() {
     <footer className="relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
       <div className="pointer-events-none absolute inset-0" style={footerGlowStyle} />
 
-      <div className="relative mx-auto w-full max-w-[1440px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">
+      <div className="relative mx-auto w-full max-w-[4440px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">
         <div className="grid gap-[44px] lg:grid-cols-[1.45fr_0.98fr_1.2fr_0.65fr] lg:gap-[80px]">
           <div className="w-[350px]">
             <Image

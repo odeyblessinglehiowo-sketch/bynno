@@ -132,7 +132,7 @@ function MobileTradingLessonsSection() {
 function DesktopTradingLessonsSection() {
   return (
     <section className="hidden bg-white pt-[10px] pb-[70px] lg:block">
-      <div className="mx-auto w-full max-w-[1380px] px-[24px] lg:px-[50px]">
+      <div className="mx-auto w-full max-w-[2480px] px-[24px] lg:px-[50px]">
         <article className="overflow-hidden rounded-[12px] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.16)]">
           <div className="grid items-start gap-[60px] p-[15px] lg:grid-cols-[1.1fr_1fr]">
             <div className="mt-[10px] flex flex-col justify-start">
@@ -195,7 +195,7 @@ function DesktopTradingLessonsSection() {
                 quality={100}
                 priority
                 sizes="(min-width: 1024px) 594px, 100vw"
-                className="h-[597px] w-[584px] object-cover object-center transition-all duration-500 hover:scale-[1.02] hover:brightness-[1.29] hover:drop-shadow-[0_25px_60px_rgba(177,4,8,0.38)]"
+                className="h-[597px] w-[1084px] object-fit object-center transition-all duration-500 hover:scale-[1.02] hover:brightness-[1.29] hover:drop-shadow-[0_25px_60px_rgba(177,4,8,0.38)]"
               />
             </div>
           </div>
@@ -206,7 +206,7 @@ function DesktopTradingLessonsSection() {
             type="button"
             className="flex h-[52px] w-[310px] items-center justify-center rounded-[9px] bg-[#FE001A] px-[24px] text-white transition-all duration-200 hover:bg-[#d10016]"
           >
-            <span className="text-[20px] font-bold tracking-[0.05em] [font-smoothing:auto]">
+            <span className="text-[20px] font-semibold tracking-[0.05em] [font-smoothing:auto]">
               Start Learning Today
             </span>
           </button>

@@ -46,7 +46,7 @@ function MobileFaqSection({
   setOpenIndex: React.Dispatch<React.SetStateAction<number | null>>;
 }) {
   return (
-    <section className="relative overflow-hidden bg-white py-[30px] lg:hidden">
+    <section className="relative overflow-hidden bg-white py-[99px] lg:hidden">
       <div className="pointer-events-none absolute inset-0">
         <Image
           src="/icons/background.g.png"
@@ -59,7 +59,7 @@ function MobileFaqSection({
 
       <div className="relative mx-auto w-full max-w-[375px] px-[20px]">
         <div className="flex flex-col">
-          <p className="text-[20px] font-medium uppercase leading-[1] tracking-[0.03em] text-[#FE001A]">
+          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase leading-[1] tracking-[0.03em] text-[#FE001A]">
             QUESTIONS
           </p>
 
@@ -130,27 +130,18 @@ function DesktopFaqSection({
   setOpenIndex: React.Dispatch<React.SetStateAction<number | null>>;
 }) {
   return (
-    <section className="relative hidden overflow-hidden bg-white py-[40px] lg:block">
-      <div className="pointer-events-none absolute inset-0">
-        <Image
-          src="/icons/background.g.png"
-          alt=""
-          fill
-          className="object-contain object-[84%_center] opacity-100"
-          priority={false}
-        />
-      </div>
+    <section className="relative hidden overflow-hidden bg-white py-[90px] lg:block">
 
-      <div className="relative mx-auto w-full max-w-[1450px] px-[40px] lg:px-[80px]">
-        <div className="mx-auto max-w-[820px] text-center">
-          <p className="text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
-            QUESTIONS
-          </p>
+      <div className="relative mx-auto w-full max-w-[4000px] px-[40px] lg:px-[80px]">
+        <div className="max-w-[820px]">
+  <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+    QUESTIONS
+  </p>
 
-          <h2 className="mt-[12px] text-[clamp(2.4rem,1.5vw,3rem)] font-bold leading-[1.05] tracking-[0.04em] text-[#000510]">
-            Frequently Asked Questions
-          </h2>
-        </div>
+  <h2 className="mt-[12px] text-[clamp(2.4rem,1.5vw,3rem)] font-bold leading-[1.05] tracking-[0.04em] text-[#000510]">
+    Frequently Asked Questions
+  </h2>
+</div>
 
         <div className="mt-[34px] flex flex-col gap-[18px]">
           {faqs.map((faq, index) => {

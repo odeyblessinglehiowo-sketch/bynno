@@ -104,7 +104,7 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
       <div className="mx-auto w-full max-w-[370px] px-[20px]">
         <div className="flex items-start justify-between gap-[12px]">
           <div className="min-w-0">
-            <p className="text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+            <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
               STEP BY STEP
             </p>
 
@@ -126,7 +126,7 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
                 alt="Previous"
                 width={30}
                 height={30}
-                className="h-[30px] w-[30px] object-contain"
+                className="h-[40px] w-[40px] object-contain"
               />
             </button>
 
@@ -141,7 +141,7 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
                 alt="Next"
                 width={30}
                 height={30}
-                className="h-[30px] w-[30px] object-contain"
+                className="h-[40px] w-[40px] object-contain"
               />
             </button>
           </div>
@@ -231,10 +231,10 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
 function DesktopLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
   return (
     <section className="hidden overflow-hidden bg-white py-[56px] md:py-[8px] lg:block">
-      <div className="mx-auto w-full max-w-[1450px] px-[20px] md:px-[40px] xl:px-[53px]">
+      <div className="mx-auto w-full max-w-[2550px] px-[20px] md:px-[40px] xl:px-[53px]">
         <div className="flex flex-col gap-[28px] lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-[1180px]">
-            <p className="text-[16px] font-medium uppercase tracking-[0.08em] text-[#FE001A] md:text-[20px]">
+          <div className="max-w-[2550px]">
+            <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[16px] font-medium uppercase tracking-[0.08em] text-[#FE001A] md:text-[20px]">
               STEP BY STEP
             </p>
 

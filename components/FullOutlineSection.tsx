@@ -108,7 +108,7 @@ function MobileFullOutlineSection() {
     <section className="bg-white lg:hidden">
       <div className="mx-auto w-full max-w-[375px] px-[10px] pt-[2px] pb-[19px]">
         <div className="max-w-[335px]">
-          <p className="text-[12px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[14px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
             THE FULL OUTLINE
           </p>
 
@@ -177,11 +177,11 @@ function MobileFullOutlineSection() {
 
 function DesktopFullOutlineSection() {
   return (
-    <section className="mx-auto hidden w-full max-w-[1479px] px-[80px] pt-[2px] pb-[54px] lg:block">
+    <section className="mx-auto hidden w-full max-w-[4500px] px-[80px] pt-[2px] pb-[54px] lg:block">
       <div className="max-w-[611px]">
-        <p className="text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-          THE FULL OUTLINE
-        </p>
+        <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+  THE FULL OUTLINE
+</p>
 
         <div className="mt-[14px]">
           <h2 className="text-[38px] font-bold leading-[1.02] tracking-[0.05em] text-[#000510]">
