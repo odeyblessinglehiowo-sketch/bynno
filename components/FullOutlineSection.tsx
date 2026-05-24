@@ -179,7 +179,7 @@ function DesktopFullOutlineSection() {
   return (
     <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
       <div className="max-w-[611px]">
-        <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+        <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
   THE FULL OUTLINE
 </p>
 

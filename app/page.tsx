@@ -187,11 +187,11 @@ function MobileHeroSection() {
               type="button"
               aria-label="Open menu"
               onClick={() => setMenuOpen((prev) => !prev)}
-              className="absolute left-0 top-1/2 z-20 flex h-[26px] w-[26px] -translate-y-1/2 flex-col items-center justify-center gap-[4px]"
+              className="absolute left-0 top-1/2 z-20 flex h-[22px] w-[22px] -translate-y-1/2 flex-col items-center justify-center gap-[4px]"
             >
-              <span className="h-[3px] w-[26px] rounded-full bg-[#000510]" />
-              <span className="h-[3px] w-[26px] rounded-full bg-[#000510]" />
-              <span className="h-[3px] w-[26px] rounded-full bg-[#000510]" />
+              <span className="h-[3px] w-[20px] rounded-full bg-[#000510]" />
+              <span className="h-[3px] w-[20px] rounded-full bg-[#000510]" />
+              <span className="h-[3px] w-[20px] rounded-full bg-[#000510]" />
             </button>
 
             <a
@@ -215,7 +215,7 @@ function MobileHeroSection() {
               type="button"
               className="mr-[-2px] text-[12px] font-bold text-[#000510] transition-colors duration-200 hover:text-[#FE001A]"
             >
-              <span className="text-[12px] font-bold tracking-[0.05em]">
+              <span className="text-[14px] font-bold tracking-[0.05em]">
                 Login
               </span>
             </button>
@@ -253,7 +253,7 @@ function MobileHeroSection() {
 
       <section
   id="top"
-  className="mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[40px]"
+  className="mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[38px]"
 >
   <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
     <MobileHeroGlowArt />
@@ -285,12 +285,12 @@ function MobileHeroSection() {
     </div>
   </div>
 
-        <div className="pt-[28px]">
+        <div className="pt-[38px]">
           <h2 className="max-w-[435px] text-[46px] font-bold leading-[1.02] tracking-[0.02em]">
             Join 1,000+ crypto learners.
           </h2>
 
-          <div className="mt-[20px] flex flex-col gap-[12px]">
+          <div className="mt-[38px] flex flex-col gap-[12px]">
             <label className="flex h-[42px] items-center gap-[14px] rounded-[8px] border border-black/10 bg-white px-[14px] shadow-[0_10px_28px_rgba(0,0,0,0.05)]">
               <Image
                 src="/icons/email.png"
@@ -358,30 +358,6 @@ function MobileHeroGlowArt() {
       >
         <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.28)_0%,rgba(255,120,120,0.18)_28%,rgba(255,0,0,0)_72%)] blur-[28px]" />
       </motion.div>
-
-      <motion.div
-  className="absolute inset-0 flex items-center justify-center"
-  animate={{
-    opacity: [0.08, 0.18, 0.32, 0.5, 0.32, 0.18, 0.08],
-    scale: [0.98, 1, 1.03, 1.06, 1.03, 1, 0.98],
-  }}
-  transition={{
-    duration: 12,
-    ease: "easeInOut",
-    repeat: Infinity,
-  }}
->
-  <div className="grid h-full w-full grid-cols-4 gap-x-[20px] gap-y-[18px] px-[12px] py-[18px] sm:grid-cols-4">
-    {Array.from({ length: 12 }).map((_, index) => (
-      <span
-        key={index}
-        className="text-center text-[7px] font-normal lowercase tracking-[0.10em] text-white/35 drop-shadow-[0_0_14px_rgba(255,255,255,0.45)]"
-      >
-        bynno
-      </span>
-    ))}
-  </div>
-</motion.div>
 
       <motion.div
         className="absolute bottom-[20px] right-[50px] h-[180px] w-[180px] rounded-full blur-[45px]"
