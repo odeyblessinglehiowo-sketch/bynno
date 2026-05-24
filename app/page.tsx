@@ -135,7 +135,7 @@ function DesktopHeader() {
         >
           <Image
             src="/icons/bynno-logo.png"
-            alt="bynno"
+            alt="Bynno - Learn Crypto"
             width={128}
             height={40}
             priority
@@ -201,7 +201,7 @@ function MobileHeroSection() {
             >
               <Image
                 src="/icons/bynno-logo.png"
-                alt="bynno"
+                alt="Bynno - Learn Crypto"
                 width={59}
                 height={18}
                 priority
@@ -215,7 +215,7 @@ function MobileHeroSection() {
               type="button"
               className="mr-[-2px] text-[12px] font-bold text-[#000510] transition-colors duration-200 hover:text-[#FE001A]"
             >
-              <span className="text-[14px] font-bold tracking-[0.05em]">
+              <span className="text-[16px] font-bold tracking-[0.05em]">
                 Login
               </span>
             </button>
@@ -404,29 +404,7 @@ function HeroGlowArt() {
           repeat: Infinity,
         }}
       />
-<motion.div
-  className="absolute inset-0 flex items-center justify-center"
-  animate={{
-    opacity: [0.08, 0.18, 0.32, 0.5, 0.32, 0.18, 0.08],
-    scale: [0.98, 1, 1.03, 1.06, 1.03, 1, 0.98],
-  }}
-  transition={{
-    duration: 12,
-    ease: "easeInOut",
-    repeat: Infinity,
-  }}
->
-  <div className="grid h-full w-full grid-cols-6 gap-x-[20px] gap-y-[18px] px-[12px] py-[18px] sm:grid-cols-4">
-    {Array.from({ length: 12 }).map((_, index) => (
-      <span
-        key={index}
-        className="text-center text-[12px] font-normal lowercase tracking-[0.10em] text-white/35 drop-shadow-[0_0_14px_rgba(255,255,255,0.45)]"
-      >
-        bynno
-      </span>
-    ))}
-  </div>
-</motion.div>
+
       <motion.div
         className="absolute right-[0px] top-[40px] h-[620px] w-[420px]"
         animate={{

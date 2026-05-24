@@ -48,13 +48,7 @@ function MobileFaqSection({
   return (
     <section className="relative overflow-hidden bg-white py-[99px] lg:hidden">
       <div className="pointer-events-none absolute inset-0">
-        <Image
-          src="/icons/background.g.png"
-          alt=""
-          fill
-          className="object-contain object-[94%_center] max-h-[700px] opacity-100"
-          priority={false}
-        />
+        
       </div>
 
       <div className="relative mx-auto w-full max-w-[375px] px-[20px]">

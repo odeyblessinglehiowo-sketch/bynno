@@ -67,7 +67,7 @@ export default function FeaturesSection() {
   return (
     <>
       <section className="bg-white lg:hidden">
-        <div className="mx-auto w-full max-w-[375px] px-[20px] py-[60px]">
+        <div className="mx-auto w-full max-w-[375px] px-[20px] py-[5px]">
           <div className="flex flex-col gap-[16px]">
             {features.map((feature) => (
               <article

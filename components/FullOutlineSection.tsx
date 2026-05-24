@@ -106,13 +106,13 @@ export default function FullOutlineSection() {
 function MobileFullOutlineSection() {
   return (
     <section className="bg-white lg:hidden">
-      <div className="mx-auto w-full max-w-[375px] px-[10px] pt-[2px] pb-[19px]">
+      <div className="mx-auto w-full max-w-[375px] px-[10px] pt-[52px] pb-[19px]">
         <div className="max-w-[335px]">
-          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[14px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
+          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[17px] font-semibold uppercase tracking-[0.05em] text-[#FE001A]">
             THE FULL OUTLINE
           </p>
 
-          <h2 className="mt-[8px] text-[22px] font-bold leading-[1.08] tracking-[0.02em] text-[#000510]">
+          <h2 className="mt-[8px] text-[22px] font-bold leading-[1.51] tracking-[0.02em] text-[#000510]">
             Everything You Need To Know...
             <br />
             Explained Each Week.
@@ -184,7 +184,7 @@ function DesktopFullOutlineSection() {
 </p>
 
         <div className="mt-[14px]">
-          <h2 className="text-[38px] font-bold leading-[1.02] tracking-[0.05em] text-[#000510]">
+          <h2 className="text-[35px] font-bold leading-[1.6] tracking-[0.04em] text-[#000510]">
             Everything You Need To Know...
           </h2>
 

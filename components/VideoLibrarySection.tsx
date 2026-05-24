@@ -12,7 +12,7 @@ export default function VideoLibrarySection() {
 function MobileVideoLibrarySection() {
   return (
     <section className="bg-white lg:hidden">
-  <div className="mx-auto w-full max-w-[375px] px-[20px] py-[60px]">
+  <div className="mx-auto w-full max-w-[375px] px-[20px] py-[90px]">
     
     {/* WRITE UP FIRST */}
     <div>
@@ -35,24 +35,18 @@ function MobileVideoLibrarySection() {
     {/* IMAGE SECOND */}
     <div className="relative mt-[22px] aspect-[335/330] w-full overflow-hidden rounded-[18px] bg-[#111] shadow-[0_18px_42px_rgba(0,0,0,0.10)]">
       <Image
-        src="/icons/video-library5.png"
+        src="/icons/video-library9.png"
         alt="Video library preview"
         fill
         priority
         className="object-cover"
       />
 
-      <button
-        type="button"
-        aria-label="Play video"
-        className="absolute left-1/2 top-1/2 flex h-[86px] w-[86px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#FE001A] shadow-[0_18px_36px_rgba(254,0,26,0.26)]"
-      >
-        <span className="ml-[5px] h-0 w-0 border-y-[12px] border-y-transparent border-l-[18px] border-l-white" />
-      </button>
+      
     </div>
 
     {/* EMAIL + CTA LAST */}
-    <div className="mt-[24px] flex flex-col gap-[12px]">
+    <div className="mt-[44px] flex flex-col gap-[12px]">
       <label className="flex h-[52px] items-center gap-[12px] rounded-[8px] border border-black/10 bg-white px-[14px] shadow-[0_10px_24px_rgba(0,0,0,0.05)]">
         <Image
           src="/icons/email2.png"
@@ -85,7 +79,7 @@ function MobileVideoLibrarySection() {
 
 function DesktopVideoLibrarySection() {
   return (
-    <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] py-[36px] lg:block lg:py-[66px]">
+    <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] py-[36px] lg:block lg:py-[96px]">
       <div className="grid items-center gap-[40px] lg:grid-cols-[1.08fr_0.92fr] lg:gap-[48px]">
   
   {/* VIDEO BOX LEFT */}
@@ -103,19 +97,19 @@ function DesktopVideoLibrarySection() {
 
   {/* TEXT RIGHT */}
   <div className="flex flex-col justify-start lg:pl-[30px]">
-    <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-      VIDEO LIBRARY
-    </p>
+    <p className="mt-[-20px] inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+  VIDEO LIBRARY
+</p>
 
-    <h2 className="mt-[40px] max-w-[604px] text-[clamp(2.2rem,3vw,2.4rem)] font-bold leading-[2.05] tracking-[0.01em] text-[#000510]">
+    <h2 className="mt-[5px] max-w-[604px] text-[clamp(2.2rem,3vw,2.4rem)] font-bold leading-[2.05] tracking-[0.01em] text-[#000510]">
       Videos That Make It Fun.
     </h2>
 
-    <p className="mt-[18px] max-w-[604px] text-[clamp(1.6rem,1.5vw,1.55rem)] leading-[1.18] tracking-[0.03em] text-[#4c4c4c]">
+    <p className="mt-[10px] max-w-[604px] text-[clamp(1.6rem,1.5vw,1.55rem)] leading-[1.18] tracking-[0.03em] text-[#4c4c4c]">
       Watch animated, easy-to-understand explainers on Bynno YouTube Channel
     </p>
 
-    <div className="mt-[30px] flex max-w-[518px] flex-col gap-3 sm:flex-row sm:items-center">
+    <div className="mt-[90px] flex max-w-[518px] flex-col gap-3 sm:flex-row sm:items-center">
       <label className="flex h-[60px] flex-1 items-center gap-3 rounded-[12px] border border-[#444548]/25 bg-white px-[15px] shadow-[0_10px_24px_rgba(0,0,0,0.05)] transition-all duration-200 focus-within:border-[#FE001A] focus-within:shadow-[0_10px_28px_rgba(254,0,26,0.10)]">
         <Image
           src="/icons/email2.png"
