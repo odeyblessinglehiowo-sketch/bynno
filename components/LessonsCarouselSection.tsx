@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import type { RefObject } from "react";
+import { motion } from "framer-motion";
 
 type LessonCard = {
   title: string;
@@ -104,48 +105,33 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
       <div className="mx-auto w-full max-w-[970px] px-[20px]">
         <div className="flex items-start justify-between gap-[12px]">
           <div className="flex-1 pr-[10px]">
-            <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
-              STEP BY STEP
-            </p>
+            <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  STEP BY STEP
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
-            <h2 className="mt-[8px] text-[17px] font-semibold leading-[1.56] tracking-[0.03em] text-[#000510]">
+            <h2 className="mt-[8px] text-[22px] font-semibold leading-[1.56] tracking-[0.03em] text-[#000510]">
         The Straightforward Path To
         <br />
         Crypto Mastery
       </h2>
           </div>
 
-          <div className="mt-[-6px] flex shrink-0 items-center gap-[8px]">
-            <button
-              type="button"
-              onClick={() => scrollCards(-1)}
-              className="transition-all duration-300 active:scale-[0.96]"
-              aria-label="Scroll left"
-            >
-              <Image
-                src="/icons/left.png"
-                alt="Previous"
-                width={30}
-                height={30}
-                className="h-[45px] w-[45px] object-contain"
-              />
-            </button>
-
-            <button
-              type="button"
-              onClick={() => scrollCards(1)}
-              className="transition-all duration-300 active:scale-[0.96]"
-              aria-label="Scroll right"
-            >
-              <Image
-                src="/icons/right.png"
-                alt="Next"
-                width={30}
-                height={30}
-                className="h-[45px] w-[45px] object-contain"
-              />
-            </button>
-          </div>
+          
         </div>
 
         <div className="mt-[8px] overflow-hidden">
@@ -236,9 +222,24 @@ function DesktopLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
         <div className="flex flex-col gap-[28px] lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-[1550px]">
             <div className="ml-[30px]">
-  <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[16px] font-medium uppercase tracking-[0.08em] text-[#FE001A] md:text-[20px]">
-    STEP BY STEP
-  </p>
+  <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  STEP BY STEP
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 </div>
 
             <h2 className="pl-[30px] mt-[10px] max-w-[990px] text-[30px] font-semibold leading-[1.95] tracking-[-0.01em] text-[#000510] md:text-[48px]">

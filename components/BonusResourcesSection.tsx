@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 type ResourceItem = {
   title: string;
@@ -86,9 +87,24 @@ export default function BonusResourcesSection() {
     <>
       <section className="bg-white px-[20px] py-[14px] lg:hidden">
         <div className="mx-auto w-full max-w-[375px]">
-          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
-            FOR EXTRA KNOWLEDGE
-          </p>
+          <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  FOR EXTRA KNOWLEDGE
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
           <h2 className="mt-[6px] text-[26px] font-bold leading-[1.05] tracking-[0.04em] text-[#000510]">
             Bonus Resources
@@ -174,9 +190,24 @@ export default function BonusResourcesSection() {
       <section className="hidden bg-white py-[18px] lg:block">
         <div className="mx-auto w-full max-w-[1700px] px-[40px] lg:px-[80px]">
           <div className="max-w-[1414px]">
-            <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
-              FOR EXTRA KNOWLEDGE
-            </p>
+            <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  FOR EXTRA KNOWLEDGE
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
             <h2 className="mt-[12px] text-[clamp(1.5rem,2.7vw,4rem)] font-bold leading-[1.05] tracking-[0.02em] text-[#000510]">
               Bonus Resources

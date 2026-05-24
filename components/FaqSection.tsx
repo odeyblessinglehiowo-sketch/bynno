@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 type FaqItem = {
   question: string;
@@ -53,9 +54,24 @@ function MobileFaqSection({
 
       <div className="relative mx-auto w-full max-w-[375px] px-[20px]">
         <div className="flex flex-col">
-          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase leading-[1] tracking-[0.03em] text-[#FE001A]">
-            QUESTIONS
-          </p>
+          <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  QUESTIONS
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
           <h2 className="mt-[14px] text-[25px] font-bold leading-[0.99] tracking-[0.01em] text-[#000510]">
             Frequently Asked Questions
@@ -128,9 +144,24 @@ function DesktopFaqSection({
 
       <div className="relative mx-auto w-full max-w-[1700px] px-[40px] lg:px-[80px]">
         <div className="max-w-[820px]">
-  <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
-    QUESTIONS
-  </p>
+ <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  QUESTIONS
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
   <h2 className="mt-[12px] text-[clamp(2.4rem,1.5vw,3rem)] font-bold leading-[1.05] tracking-[0.04em] text-[#000510]">
     Frequently Asked Questions

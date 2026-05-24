@@ -139,29 +139,76 @@ function DesktopHeader() {
             width={128}
             height={40}
             priority
-            className="h-[33px] w-[105.6px] sm:w-[110px] md:w-[158px] lg:w-[105.6px]"
+            className="mt-[-30px] h-[33px] w-[105.6px] sm:w-[110px] md:w-[158px] lg:w-[105.6px]"
           />
         </a>
 
-        <nav className="flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-15">
+        <nav className="mt-[-30px] flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-15">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
-              className="h-[20px] w-[65px] text-[18px] font-semibold tracking-[0.04em] text-[#000510] transition-all duration-200 hover:-translate-y-0.5 hover:text-[#FE001A]"
-            >
-              {item}
-            </a>
+  key={item}
+  href="#"
+  className="
+    relative
+    h-[20px]
+    w-[65px]
+    w-fit
+    text-[18px]
+    font-semibold
+    tracking-[0.04em]
+    text-[#000510]
+    transition-colors duration-300
+    hover:text-[#000510]
+
+    after:absolute
+    after:left-0
+    after:bottom-[-6px]
+    after:h-[2px]
+    after:w-full
+    after:origin-left
+    after:scale-x-0
+    after:bg-[#FE001A]
+    after:transition-transform
+    after:duration-300
+    after:content-['']
+
+    hover:after:scale-x-100
+  "
+>
+  {item}
+</a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-5 justify-self-end">
-          <a
-            href="#"
-            className="text-[17px] font-semibold tracking-[0.05em] text-[#000510] transition-all duration-200 hover:text-[#FE001A]"
-          >
-            Login
-          </a>
+        <div className="mt-[-20px] flex items-center gap-5 justify-self-end">
+         <a
+  href="#"
+  className="
+    relative
+    text-[17px]
+    font-semibold
+    tracking-[0.05em]
+    text-[#000510]
+    transition-colors duration-300
+    hover:text-[#000510]
+
+    after:absolute
+    after:left-0
+    after:bottom-[-6px]
+    after:h-[2px]
+    after:w-full
+    after:origin-left
+    after:scale-x-0
+    after:bg-[#FE001A]
+    after:transition-transform
+    after:duration-300
+    after:content-['']
+
+    hover:after:scale-x-100
+  "
+>
+  Login
+</a>
 
           <button
             type="button"

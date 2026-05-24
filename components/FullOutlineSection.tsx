@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 type OutlineCard = {
   title: string;
   week: string;
@@ -108,9 +108,24 @@ function MobileFullOutlineSection() {
     <section className="bg-white lg:hidden">
       <div className="mx-auto w-full max-w-[375px] px-[10px] pt-[52px] pb-[19px]">
         <div className="max-w-[335px]">
-          <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[17px] font-semibold uppercase tracking-[0.05em] text-[#FE001A]">
-            THE FULL OUTLINE
-          </p>
+          <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  THE FULL OUTLINE
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
           <h2 className="mt-[8px] text-[22px] font-bold leading-[1.51] tracking-[0.02em] text-[#000510]">
             Everything You Need To Know...
@@ -179,10 +194,24 @@ function DesktopFullOutlineSection() {
   return (
     <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
       <div className="max-w-[611px]">
-        <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+        <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
   THE FULL OUTLINE
-</p>
-
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
         <div className="mt-[14px]">
           <h2 className="text-[35px] font-bold leading-[1.6] tracking-[0.04em] text-[#000510]">
             Everything You Need To Know...

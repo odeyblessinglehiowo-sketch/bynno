@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import { motion } from "framer-motion";
 
 type PlayCard = {
   kind: "play";
@@ -134,9 +135,24 @@ function MobileGamesSection() {
       >
         <div className="mx-auto w-full px-[20px] py-[24px]">
           <div className="max-w-[335px]">
-  <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-    LEARN BY PLAYING
-  </p>
+  <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  LEARN BY PLAYING
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
   <h2 className="mt-[13px] text-[26px] font-bold leading-[1.09] tracking-[0.02em] text-[#000510]">
     Fun Crypto Games
@@ -257,9 +273,24 @@ function DesktopGamesSection() {
       >
         <div className="mx-auto flex min-h-[780px] max-w-[1432px] flex-col px-[20px] py-[44px] sm:px-[28px] sm:py-[56px] lg:px-[80px] lg:py-[66px]">
   <div className="max-w-[832px]">
-    <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
-      LEARN BY PLAYING
-    </p>
+    <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  LEARN BY PLAYING
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
     <h2 className="mt-[12px] text-[clamp(2.4rem,1.3vw,1.8rem)] font-bold leading-[1.76] tracking-[0.04em] text-[#000510]">
       Fun Crypto Games

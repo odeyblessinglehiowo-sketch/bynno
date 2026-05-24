@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function VideoLibrarySection() {
   return (
@@ -16,9 +17,24 @@ function MobileVideoLibrarySection() {
     
     {/* WRITE UP FIRST */}
     <div>
-      <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.04em] text-[#FE001A]">
-        VIDEO LIBRARY
-      </p>
+      <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
+  VIDEO LIBRARY
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
       <h2 className="mt-[8px] text-[22px] font-semibold leading-[1.16] tracking-[0.03em] text-[#000510]">
         The Straightforward Path To
@@ -97,9 +113,24 @@ function DesktopVideoLibrarySection() {
 
   {/* TEXT RIGHT */}
   <div className="flex flex-col justify-start lg:pl-[30px]">
-    <p className="mt-[-20px] inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]">
+   <motion.p
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0.7 }}
+  className="inline-block w-fit text-[20px] font-medium uppercase tracking-[0.08em] text-[#FE001A]"
+>
   VIDEO LIBRARY
-</p>
+  <motion.span
+    className="mt-[2px] block h-[2px] w-full origin-left bg-[#FE001A]"
+    variants={{
+      hidden: { scaleX: 0 },
+      show: {
+        scaleX: 1,
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    }}
+  />
+</motion.p>
 
     <h2 className="mt-[5px] max-w-[604px] text-[clamp(2.2rem,3vw,2.4rem)] font-bold leading-[2.05] tracking-[0.01em] text-[#000510]">
       Videos That Make It Fun.

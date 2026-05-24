@@ -65,7 +65,7 @@ function MobileTradingLessonsSection() {
 
           <div className="mt-[10px]">
             <h3 className="max-w-[400px] text-[25px] font-bold leading-[1.02] tracking-[0.02em] text-[#000510]">
-              Trading... How Top Traders Beat The Markets
+              Trading: How Top Traders <br /> Beat the Markets
             </h3>
 
             <p className="mt-[10px] text-[24px] font-medium leading-none text-[#B10408]">
@@ -114,7 +114,25 @@ function MobileTradingLessonsSection() {
             />
           </div>
         </article>
-         <div className="mt-[25px] flex justify-center">
+          {/* EMAIL + CTA LAST */}
+            <div className="mt-[24px] flex flex-col gap-[12px]">
+              <label className="flex h-[46px] items-center gap-[12px] rounded-[8px] border border-black/10 bg-white px-[14px] shadow-[0_10px_24px_rgba(0,0,0,0.05)]">
+                <Image
+                  src="/icons/email2.png"
+                  alt="Email icon"
+                  width={22}
+                  height={22}
+                  className="h-[22px] w-[22px] shrink-0 object-contain"
+                />
+        
+                <input
+                  type="email"
+                  placeholder="Type your email address here"
+                  className="w-full bg-transparent text-[14px] font-medium text-[#444548] outline-none placeholder:text-[#444548]"
+                />
+              </label>
+              </div>
+         <div className="mt-[10px] flex justify-center">
           <button
             type="button"
             className="flex h-[42px] w-[335px] items-center justify-center rounded-[8px] bg-[#FE001A] px-[24px] text-white transition-all duration-200 hover:bg-[#d10016]"
