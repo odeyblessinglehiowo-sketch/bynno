@@ -127,7 +127,7 @@ export default function Page() {
 function DesktopHeader() {
   return (
     <header className="bg-white">
-      <div className="mx-auto grid h-[99px] w-full max-w-[2800px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[96px]">
+      <div className="mx-auto grid h-[99px] w-full max-w-[1700px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[94px]">
         <a
           href="#top"
           aria-label="bynno home"
