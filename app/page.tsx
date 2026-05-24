@@ -37,17 +37,17 @@ export default function Page() {
 
         <section
           id="top"
-          className="mx-auto w-full max-w-[2400px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
+          className="mx-auto w-full max-w-[1600px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
         >
           <div className="grid items-start gap-8 lg:grid-cols-[1.2fr_0.95fr] lg:gap-14">
             <div className="relative isolate h-[545px] overflow-hidden rounded-[40px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_19%,#530008_100%)] px-8 pt-[20px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)] lg:px-9 lg:py-10">
               <div className="relative z-10 flex h-full flex-col justify-start">
-                <div className="ml-[-8px] max-w-[1980px]">
+                <div className="ml-[-8px] max-w-[1800px]">
                   <h1 className="mt-[10px] max-w-[628px] text-[67px] font-bold leading-[90px] tracking-[0.02em]">
                     Understand Crypto Finally!
                   </h1>
 
-                  <p className="mt-[52px] max-w-[1923px] text-[clamp(1.35rem,1.88vw,2.05rem)] font-semibold leading-[1.12] tracking-[0.03em]">
+                  <p className="mt-[52px] max-w-[1800px] text-[clamp(1.35rem,1.88vw,2.05rem)] font-semibold leading-[1.12] tracking-[0.03em]">
                     A clear, easy course that makes sense of it all.
                   </p>
                 </div>
@@ -74,7 +74,7 @@ export default function Page() {
             </div>
 
             <div className="flex flex-col justify-start pt-4 lg:pl-[25px] lg:pt-[130px]">
-              <h2 className="max-w-[1480px] text-[clamp(2.0rem,4.5vw,4rem)] font-bold leading-[1.3] tracking-[0.03em] text-[#000510]">
+              <h2 className="max-w-[580px] text-[clamp(2.0rem,4.5vw,4rem)] font-bold leading-[1.3] tracking-[0.03em] text-[#000510]">
                 Join 1,000+ crypto learners.
               </h2>
 
@@ -91,7 +91,7 @@ export default function Page() {
                   <input
                     type="email"
                     placeholder="Type your email address here"
-                    className="w-[230px] bg-transparent text-[3px] font-normal outline-none placeholder:font-normal placeholder:text-[#444548] sm:text-[17px]"
+                    className="w-[260px] bg-transparent text-[3px] font-normal outline-none placeholder:font-normal placeholder:text-[#444548] sm:text-[1px]"
                   />
                 </label>
 
@@ -127,7 +127,7 @@ export default function Page() {
 function DesktopHeader() {
   return (
     <header className="bg-white">
-      <div className="mx-auto grid h-[99px] w-full max-w-[4760px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[96px]">
+      <div className="mx-auto grid h-[99px] w-full max-w-[2000px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[96px]">
         <a
           href="#top"
           aria-label="bynno home"
@@ -205,7 +205,7 @@ function MobileHeroSection() {
                 width={59}
                 height={18}
                 priority
-                className="h-auto w-[59px] object-contain"
+                className="h-auto w-[90px] object-cover"
               />
             </a>
           </div>
@@ -222,7 +222,7 @@ function MobileHeroSection() {
 
             <button
               type="button"
-              className="flex h-[29px] w-[146px] items-center justify-center rounded-[8px] bg-[#FE001A] px-[14px] text-[12px] font-bold text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              className="flex h-[29px] w-[122px] items-center justify-center rounded-[8px] bg-[#FE001A] px-[1px] text-[12px] font-bold text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             >
               <span className="text-[12px] font-semibold tracking-[0.03em]">
                 Start Learning free
@@ -252,38 +252,38 @@ function MobileHeroSection() {
       </header>
 
       <section
-        id="top"
-        className="mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[40px]"
-      >
-        <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
-          <MobileHeroGlowArt />
+  id="top"
+  className="mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[40px]"
+>
+  <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
+    <MobileHeroGlowArt />
 
-          <div className="relative z-10 max-w-[389px] rounded-[10px]">
-            <h1 className="text-[35px] font-bold leading-[1.02] tracking-[-0.01em]">
-              Understand Crypto
-              <br />
-              Finally!
-            </h1>
+    <div className="relative z-10 max-w-[389px] rounded-[10px]">
+      <h1 className="text-[35px] font-bold leading-[1.02] tracking-[-0.01em]">
+        Understand Crypto
+        <br />
+        Finally!
+      </h1>
 
-            <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
-              A clear, easy course that makes sense of it all.
-            </p>
-          </div>
+      <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
+        A clear, easy course that makes sense of it all.
+      </p>
+    </div>
 
-          <div className="relative z-10 mt-[48px] flex items-center gap-[14px]">
-            <Image
-              src="/icons/certificate-white.png"
-              alt="Certificate icon"
-              width={40}
-              height={40}
-              className="h-[40px] w-[40px] shrink-0 object-contain"
-            />
+    <div className="relative z-10 mt-[48px] flex items-center gap-[14px]">
+      <Image
+        src="/icons/certificate-white.png"
+        alt="Certificate icon"
+        width={40}
+        height={40}
+        className="h-[40px] w-[40px] shrink-0 object-contain"
+      />
 
-            <p className="text-[20px] font-semibold leading-none tracking-[0.04em]">
-              Certificate Included
-            </p>
-          </div>
-        </div>
+      <p className="text-[20px] font-semibold leading-none tracking-[0.04em]">
+        Certificate Included
+      </p>
+    </div>
+  </div>
 
         <div className="pt-[28px]">
           <h2 className="max-w-[435px] text-[46px] font-bold leading-[1.02] tracking-[0.02em]">
@@ -360,28 +360,28 @@ function MobileHeroGlowArt() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-[-10px] right-[-18px]"
-        animate={{
-          opacity: [
-            0, 0.08, 0.18, 0.35, 0.55, 0.75, 0.95, 1, 0.95, 0.75, 0.55, 0.35, 0.18, 0.08, 0,
-          ],
-          y: [8, 6, 4, 2, 0, -1, -2, -2, -2, -1, 0, 2, 4, 6, 8],
-        }}
-        transition={{
-          duration: 12,
-          ease: "easeInOut",
-          repeat: Infinity,
-        }}
+  className="absolute inset-0 flex items-center justify-center"
+  animate={{
+    opacity: [0.08, 0.18, 0.32, 0.5, 0.32, 0.18, 0.08],
+    scale: [0.98, 1, 1.03, 1.06, 1.03, 1, 0.98],
+  }}
+  transition={{
+    duration: 12,
+    ease: "easeInOut",
+    repeat: Infinity,
+  }}
+>
+  <div className="grid h-full w-full grid-cols-4 gap-x-[20px] gap-y-[18px] px-[12px] py-[18px] sm:grid-cols-4">
+    {Array.from({ length: 12 }).map((_, index) => (
+      <span
+        key={index}
+        className="text-center text-[7px] font-normal lowercase tracking-[0.10em] text-white/35 drop-shadow-[0_0_14px_rgba(255,255,255,0.45)]"
       >
-        <Image
-          src="/icons/bynno-hero-art1.png"
-          alt="Bynno crypto figure"
-          width={120}
-          height={420}
-          priority
-          className="h-[300px] w-[300px] object-cover opacity-[0.50] mix-blend-screen saturate-[1.15]"
-        />
-      </motion.div>
+        bynno
+      </span>
+    ))}
+  </div>
+</motion.div>
 
       <motion.div
         className="absolute bottom-[20px] right-[50px] h-[180px] w-[180px] rounded-full blur-[45px]"
@@ -428,7 +428,29 @@ function HeroGlowArt() {
           repeat: Infinity,
         }}
       />
-
+<motion.div
+  className="absolute inset-0 flex items-center justify-center"
+  animate={{
+    opacity: [0.08, 0.18, 0.32, 0.5, 0.32, 0.18, 0.08],
+    scale: [0.98, 1, 1.03, 1.06, 1.03, 1, 0.98],
+  }}
+  transition={{
+    duration: 12,
+    ease: "easeInOut",
+    repeat: Infinity,
+  }}
+>
+  <div className="grid h-full w-full grid-cols-6 gap-x-[20px] gap-y-[18px] px-[12px] py-[18px] sm:grid-cols-4">
+    {Array.from({ length: 12 }).map((_, index) => (
+      <span
+        key={index}
+        className="text-center text-[12px] font-normal lowercase tracking-[0.10em] text-white/35 drop-shadow-[0_0_14px_rgba(255,255,255,0.45)]"
+      >
+        bynno
+      </span>
+    ))}
+  </div>
+</motion.div>
       <motion.div
         className="absolute right-[0px] top-[40px] h-[620px] w-[420px]"
         animate={{
@@ -469,14 +491,7 @@ function HeroGlowArt() {
           repeat: Infinity,
         }}
       >
-        <Image
-          src="/icons/bynno-hero-art1.png"
-          alt="Bynno crypto figure"
-          width={520}
-          height={820}
-          priority
-          className="h-[690px] w-auto object-contain opacity-[0.72] mix-blend-screen saturate-[1.15]"
-        />
+  
       </motion.div>
 
       <motion.div
