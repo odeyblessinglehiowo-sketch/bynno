@@ -143,7 +143,7 @@ function DesktopHeader() {
           />
         </a>
 
-        <nav className="flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-21">
+        <nav className="flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-18">
           {navItems.map((item) => (
             <a
               key={item}
