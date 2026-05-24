@@ -37,17 +37,17 @@ export default function Page() {
 
         <section
           id="top"
-          className="mx-auto w-full max-w-[1600px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
+          className="mx-auto w-full max-w-[1800px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
         >
           <div className="grid items-start gap-8 lg:grid-cols-[1.2fr_0.95fr] lg:gap-14">
             <div className="relative isolate h-[545px] overflow-hidden rounded-[40px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_19%,#530008_100%)] px-8 pt-[20px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)] lg:px-9 lg:py-10">
               <div className="relative z-10 flex h-full flex-col justify-start">
-                <div className="ml-[-8px] max-w-[1800px]">
+                <div className="ml-[-8px] max-w-[1980px]">
                   <h1 className="mt-[10px] max-w-[628px] text-[67px] font-bold leading-[90px] tracking-[0.02em]">
                     Understand Crypto Finally!
                   </h1>
 
-                  <p className="mt-[52px] max-w-[1800px] text-[clamp(1.35rem,1.88vw,2.05rem)] font-semibold leading-[1.12] tracking-[0.03em]">
+                  <p className="mt-[52px] max-w-[1923px] text-[clamp(1.35rem,1.88vw,2.05rem)] font-semibold leading-[1.12] tracking-[0.03em]">
                     A clear, easy course that makes sense of it all.
                   </p>
                 </div>
@@ -78,7 +78,7 @@ export default function Page() {
                 Join 1,000+ crypto learners.
               </h2>
 
-              <div className="mt-10 flex max-w-[990px] flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-10 flex max-w-[936px] flex-col gap-3 sm:flex-row sm:items-center">
                 <label className="flex h-[54px] flex-1 items-center gap-4 rounded-[8px] border border-black/15 bg-white px-4 shadow-[0_10px_28px_rgba(0,0,0,0.05)] transition-all duration-200 focus-within:border-[#FE001A] focus-within:shadow-[0_10px_32px_rgba(254,0,26,0.12)] sm:px-5">
                   <Image
                     src="/icons/email.png"
@@ -91,7 +91,7 @@ export default function Page() {
                   <input
                     type="email"
                     placeholder="Type your email address here"
-                    className="w-[260px] bg-transparent text-[3px] font-normal outline-none placeholder:font-normal placeholder:text-[#444548] sm:text-[1px]"
+                    className="w-[230px] bg-transparent text-[3px] font-normal outline-none placeholder:font-normal placeholder:text-[#444548] sm:text-[17px]"
                   />
                 </label>
 
@@ -127,7 +127,7 @@ export default function Page() {
 function DesktopHeader() {
   return (
     <header className="bg-white">
-      <div className="mx-auto grid h-[99px] w-full max-w-[2000px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[96px]">
+      <div className="mx-auto grid h-[99px] w-full max-w-[2300px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[310px]">
         <a
           href="#top"
           aria-label="bynno home"
@@ -143,7 +143,7 @@ function DesktopHeader() {
           />
         </a>
 
-        <nav className="flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-12">
+        <nav className="flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-24">
           {navItems.map((item) => (
             <a
               key={item}
@@ -165,7 +165,7 @@ function DesktopHeader() {
 
           <button
             type="button"
-            className="h-[52px] w-[223px] rounded-[8px] border border-[#444548] bg-[#FE001A] text-[20px] font-heavy text-white"
+            className="h-[52px] w-[223px] rounded-[8px] bg-[#FE001A] text-[20px] font-heavy text-white"
           >
             <span className="text-[20px] font-extrabold tracking-[0.05em]">Start Learning Free</span>
           </button>
