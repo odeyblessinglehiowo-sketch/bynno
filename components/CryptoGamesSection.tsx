@@ -252,7 +252,7 @@ function DesktopGamesSection() {
   return (
     <section className="hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]">
       <div
-        className="relative mx-auto w-full max-w-[4500px] overflow-hidden rounded-[40px]"
+        className="relative mx-auto w-full max-w-[1700px] overflow-hidden rounded-[40px]"
         style={sectionStyle}
       >
         <div className="mx-auto flex min-h-[780px] max-w-[1432px] flex-col px-[20px] py-[44px] sm:px-[28px] sm:py-[56px] lg:px-[80px] lg:py-[66px]">

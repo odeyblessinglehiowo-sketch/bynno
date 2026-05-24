@@ -132,7 +132,7 @@ function MobileTradingLessonsSection() {
 function DesktopTradingLessonsSection() {
   return (
     <section className="hidden bg-white pt-[10px] pb-[70px] lg:block">
-      <div className="mx-auto w-full max-w-[2480px] px-[24px] lg:px-[50px]">
+      <div className="mx-auto w-full max-w-[1700px] px-[24px] lg:px-[50px]">
         <article className="overflow-hidden rounded-[12px] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.16)]">
           <div className="grid items-start gap-[60px] p-[15px] lg:grid-cols-[1.1fr_1fr]">
             <div className="mt-[10px] flex flex-col justify-start">

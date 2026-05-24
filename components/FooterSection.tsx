@@ -247,7 +247,7 @@ function DesktopFooterSection() {
     <footer className="relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
       <div className="pointer-events-none absolute inset-0" style={footerGlowStyle} />
 
-      <div className="relative mx-auto w-full max-w-[4440px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">
+      <div className="relative mx-auto w-full max-w-[1700px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">
         <div className="grid gap-[44px] lg:grid-cols-[1.45fr_0.98fr_1.2fr_0.65fr] lg:gap-[80px]">
           <div className="w-[350px]">
             <Image

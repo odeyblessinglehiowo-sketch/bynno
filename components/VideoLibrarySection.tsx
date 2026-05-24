@@ -85,7 +85,7 @@ function MobileVideoLibrarySection() {
 
 function DesktopVideoLibrarySection() {
   return (
-    <section className="mx-auto hidden w-full max-w-[4500px] px-[80px] py-[36px] lg:block lg:py-[66px]">
+    <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] py-[36px] lg:block lg:py-[66px]">
       <div className="grid items-center gap-[40px] lg:grid-cols-[1.08fr_0.92fr] lg:gap-[48px]">
   
   {/* VIDEO BOX LEFT */}

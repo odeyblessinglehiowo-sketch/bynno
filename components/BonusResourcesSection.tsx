@@ -172,7 +172,7 @@ export default function BonusResourcesSection() {
       </section>
 
       <section className="hidden bg-white py-[18px] lg:block">
-        <div className="mx-auto w-full max-w-[4450px] px-[40px] lg:px-[80px]">
+        <div className="mx-auto w-full max-w-[1700px] px-[40px] lg:px-[80px]">
           <div className="max-w-[1414px]">
             <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
               FOR EXTRA KNOWLEDGE
