@@ -181,7 +181,7 @@ function MobileHeroSection() {
   return (
     <div className="bg-white text-[#000510]">
       <header className="relative z-30 bg-white">
-        <div className="mx-auto flex h-[62px] w-full max-w-[595px] items-center justify-between px-[20px]">
+        <div className="mx-auto flex h-[62px] w-full max-w-[575px] items-center justify-between px-[20px]">
           <div className="relative flex items-center">
             <button
               type="button"
@@ -265,7 +265,7 @@ function MobileHeroSection() {
         Finally!
       </h1>
 
-      <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
+      <p className="mt-[34px] max-w-[389px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
         A clear, easy course that makes sense of it all.
       </p>
     </div>
