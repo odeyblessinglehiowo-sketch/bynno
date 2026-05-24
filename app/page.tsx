@@ -265,7 +265,7 @@ function MobileHeroSection() {
         Finally!
       </h1>
 
-      <p className="mt-[34px] max-w-[389px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
+      <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
         A clear, easy course that makes sense of it all.
       </p>
     </div>
