@@ -101,20 +101,21 @@ export default function LessonsCarouselSection() {
 function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
   return (
     <section className="overflow-hidden bg-white py-[6px] lg:hidden">
-      <div className="mx-auto w-full max-w-[370px] px-[20px]">
+      <div className="mx-auto w-full max-w-[970px] px-[20px]">
         <div className="flex items-start justify-between gap-[12px]">
-          <div className="min-w-0">
+          <div className="flex-1 pr-[10px]">
             <p className="inline-block w-fit border-b border-[#FE001A]/50 pb-[2px] text-[20px] font-medium uppercase tracking-[0.05em] text-[#FE001A]">
               STEP BY STEP
             </p>
 
-            <h2 className="mt-[10px] max-w-[400px] text-[20px] font-bold leading-[1.09] tracking-[0.02em] text-[#000510]">
-              The Straightforward Path To
-               Crypto Mastery
-            </h2>
+            <h2 className="mt-[8px] text-[17px] font-semibold leading-[1.56] tracking-[0.03em] text-[#000510]">
+        The Straightforward Path To
+        <br />
+        Crypto Mastery
+      </h2>
           </div>
 
-          <div className="mt-[2px] flex shrink-0 items-center gap-[8px]">
+          <div className="mt-[-6px] flex shrink-0 items-center gap-[8px]">
             <button
               type="button"
               onClick={() => scrollCards(-1)}
