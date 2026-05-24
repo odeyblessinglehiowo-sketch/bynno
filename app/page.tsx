@@ -139,7 +139,7 @@ function DesktopHeader() {
             width={128}
             height={40}
             priority
-            className="h-[33px] w-[105.6px] sm:w-[110px] md:w-[118px] lg:w-[105.6px]"
+            className="h-[33px] w-[105.6px] sm:w-[110px] md:w-[158px] lg:w-[105.6px]"
           />
         </a>
 
@@ -167,7 +167,7 @@ function DesktopHeader() {
             type="button"
             className="h-[52px] w-[223px] rounded-[8px] bg-[#FE001A] text-[20px] font-heavy text-white"
           >
-            <span className="text-[20px] font-extrabold tracking-[0.05em]">Start Learning Free</span>
+            <span className="text-[20px] font-bold tracking-[0.05em]">Start Learning Free</span>
           </button>
         </div>
       </div>
