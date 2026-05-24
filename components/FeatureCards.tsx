@@ -95,7 +95,7 @@ export default function FeaturesSection() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto hidden max-w-[4500px] px-[44px] pb-22 pt-[6px] lg:block lg:px-[50px] lg:pt-[42px]">
+      <section className="relative z-10 mx-auto hidden max-w-[1700px] px-[44px] pb-22 pt-[6px] lg:block lg:px-[50px] lg:pt-[42px]">
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 lg:gap-15">
           {features.map((feature) => (
             <div
