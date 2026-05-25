@@ -1,5 +1,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+
+const desktopNavItems = [
+  { label: "Home", href: "#top-desktop" },
+  { label: "Guides", href: "#guides-desktop" },
+  { label: "Trading", href: "#trading-desktop" },
+  { label: "Games", href: "#games-desktop" },
+  { label: "Community", href: "#community-desktop" },
+];
 type OutlineCard = {
   title: string;
   week: string;
@@ -105,7 +113,9 @@ export default function FullOutlineSection() {
 
 function MobileFullOutlineSection() {
   return (
-    <section className="bg-white lg:hidden">
+    <section
+    id="guides-mobile"
+     className="bg-white lg:hidden">
       <div className="mx-auto w-full max-w-[375px] px-[10px] pt-[52px] pb-[19px]">
         <div className="max-w-[335px]">
           <motion.p
@@ -192,7 +202,9 @@ function MobileFullOutlineSection() {
 
 function DesktopFullOutlineSection() {
   return (
-    <section className="mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
+    <section 
+     id="guides-desktop"
+   className="scroll-mt-[120px] mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
       <div className="max-w-[611px]">
         <motion.p
   initial="hidden"

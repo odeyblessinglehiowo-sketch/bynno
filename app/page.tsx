@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -15,7 +16,13 @@ import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 import MobileStickyHeader from "@/components/MobileStickyHeader";
 
-const navItems = ["Home", "Guides", "Trading", "Games", "Community"];
+const desktopNavItems = [
+  { label: "Home", href: "#top-desktop" },
+  { label: "Guides", href: "#guides-desktop" },
+  { label: "Trading", href: "#trading-desktop" },
+  { label: "Games", href: "#games-desktop" },
+  { label: "Community", href: "#community-desktop" },
+];
 
 export default function Page() {
   return (
@@ -40,7 +47,7 @@ export default function Page() {
         <DesktopHeader />
 
         <section
-          id="top"
+          id="top-desktop"
           className="mx-auto w-full max-w-[1700px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
         >
           <div className="grid items-start gap-8 lg:grid-cols-[1.2fr_0.95fr] lg:gap-14">
@@ -130,6 +137,7 @@ export default function Page() {
 
 function DesktopHeader() {
   return (
+    
     <header className="sticky top-0 z-50 bg-white">
       <div className="mx-auto grid h-[99px] w-full max-w-[1800px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[94px]">
         <a
@@ -148,35 +156,35 @@ function DesktopHeader() {
         </a>
 
         <nav className="mt-[-30px] flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-15">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="
-                relative w-fit
-                text-[18px]
-                font-semibold
-                tracking-[0.04em]
-                text-[#000510]
-                transition-colors duration-300
-                after:absolute
-                after:left-0
-                after:bottom-[-6px]
-                after:h-[2px]
-                after:w-full
-                after:origin-left
-                after:scale-x-0
-                after:bg-[#FE001A]
-                after:transition-transform
-                after:duration-300
-                after:content-['']
-                hover:after:scale-x-100
-              "
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
+  {desktopNavItems.map((item) => (
+    <a
+      key={item.label}
+      href={item.href}
+      className="
+        relative w-fit
+        text-[18px]
+        font-semibold
+        tracking-[0.04em]
+        text-[#000510]
+        transition-colors duration-300
+        after:absolute
+        after:left-0
+        after:bottom-[-6px]
+        after:h-[2px]
+        after:w-full
+        after:origin-left
+        after:scale-x-0
+        after:bg-[#FE001A]
+        after:transition-transform
+        after:duration-300
+        after:content-['']
+        hover:after:scale-x-100
+      "
+    >
+      {item.label}
+    </a>
+  ))}
+</nav>
 
         <div className="mt-[-20px] flex items-center gap-5 justify-self-end">
           <a
@@ -226,7 +234,7 @@ function DesktopHeader() {
   return (
 
       <section
-  id="top"
+  id="top-mobile"
   className="relative z-0 mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[38px]"
 >
         <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
@@ -468,4 +476,4 @@ function HeroGlowArt() {
       />
     </div>
   );
-}
+} 

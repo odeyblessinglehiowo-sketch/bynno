@@ -1,6 +1,14 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 
+const desktopNavItems = [
+  { label: "Home", href: "#top-desktop" },
+  { label: "Guides", href: "#guides-desktop" },
+  { label: "Trading", href: "#trading-desktop" },
+  { label: "Games", href: "#games-desktop" },
+  { label: "Community", href: "#community-desktop" },
+];
+
 const companyLinks = [
   "About",
   "Partnerships",
@@ -87,7 +95,9 @@ export default function FooterSection() {
 
 function MobileFooterSection() {
   return (
-    <footer className="relative overflow-hidden bg-white text-[#2B2B2B] lg:hidden">
+    <footer 
+    id="community-mobile"
+    className="relative overflow-hidden bg-white text-[#2B2B2B] lg:hidden">
       <div className="pointer-events-none absolute inset-0" style={footerGlowStyle} />
 
       <div className="relative mx-auto w-full max-w-[395px] px-[20px] py-[28px]">
@@ -105,7 +115,8 @@ function MobileFooterSection() {
             Helping the next million people understand crypto. One simple lesson at a time
           </p>
 
-          <section className="mt-[26px] w-full text-left">
+          <section
+           className="mt-[26px] w-full text-left">
   <div className="flex items-start gap-[10px]">
     <Image
       src="/icons/phone-in-hand.png"
@@ -244,7 +255,9 @@ function MobileFooterSection() {
 
 function DesktopFooterSection() {
   return (
-    <footer className="relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
+    <footer 
+    id="community-desktop"
+    className="scroll-mt-[120px] relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
       <div className="pointer-events-none absolute inset-0" style={footerGlowStyle} />
 
       <div className="relative mx-auto w-full max-w-[1700px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">

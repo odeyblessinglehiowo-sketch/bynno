@@ -3,7 +3,14 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const navItems = ["Home", "Guides", "Trading", "Games", "Community"];
+
+const mobileNavItems = [
+  { label: "Home", href: "#top-mobile" },
+  { label: "Guides", href: "#guides-mobile" },
+  { label: "Trading", href: "#trading-mobile" },
+  { label: "Games", href: "#games-mobile" },
+  { label: "Community", href: "#community-mobile" },
+];
 
 export default function MobileStickyHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +33,7 @@ export default function MobileStickyHeader() {
                 <span className="h-[3px] w-[20px] rounded-full bg-[#000510]" />
               </button>
 
-              <a href="#top" aria-label="bynno home" className="relative z-20 ml-[38px]">
+              <a href="#top-desktop" aria-label="bynno home" className="relative z-20 ml-[38px]">
                 <Image
                   src="/icons/bynno-logo.png"
                   alt="Bynno - Learn Crypto"
@@ -62,25 +69,25 @@ export default function MobileStickyHeader() {
               menuOpen ? "max-h-[320px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <div className="mx-auto flex max-w-[375px] flex-col px-[20px] pb-[14px] pt-[10px]">
-              {navItems.map((item) => (
-                <button
-                  key={item}
-                  type="button"
-                  onClick={() => setMenuOpen(false)}
-                  className="rounded-[10px] px-[12px] py-[12px] text-left text-[15px] font-semibold text-[#000510] transition-all duration-200 hover:translate-x-[3px] hover:bg-[#FE001A]/[0.06] hover:text-[#FE001A]"
-                >
-                  {item}
-                </button>
-              ))}
-            </div>
+            
+           <div className="mx-auto flex max-w-[375px] flex-col px-[20px] pb-[14px] pt-[10px]">
+  {mobileNavItems.map((item) => (
+    <a
+      key={item.label}
+      href={item.href}
+      onClick={() => setMenuOpen(false)}
+      className="rounded-[10px] px-[12px] py-[12px] text-left text-[15px] font-semibold text-[#000510] transition-all duration-200 hover:translate-x-[3px] hover:bg-[#FE001A]/[0.06] hover:text-[#FE001A]"
+    >
+      {item.label}
+    </a>
+  ))}
+</div>
           </div>
         </header>
 
         
           
-        </div>
       </div>
-   
+    </div>
   );
 }

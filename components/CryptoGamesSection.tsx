@@ -4,6 +4,14 @@ import Image from "next/image";
 import type { CSSProperties } from "react";
 import { motion } from "framer-motion";
 
+const desktopNavItems = [
+  { label: "Home", href: "#top-desktop" },
+  { label: "Guides", href: "#guides-desktop" },
+  { label: "Trading", href: "#trading-desktop" },
+  { label: "Games", href: "#games-desktop" },
+  { label: "Community", href: "#community-desktop" },
+];
+
 type PlayCard = {
   kind: "play";
   title: string;
@@ -28,7 +36,7 @@ type LeaderboardCard = {
 
 type GameCard = PlayCard | LeaderboardCard;
 
-const HOME_HREF = "/#home";
+const HOME_HREF = "#top";
 
 const games: GameCard[] = [
   {
@@ -127,8 +135,12 @@ export default function GamesSection() {
 }
 
 function MobileGamesSection() {
+  
   return (
-    <section className="bg-white px-[20px] py-[43px] lg:hidden">
+    
+    <section 
+    id="games-mobile"
+    className="bg-white px-[20px] py-[43px] lg:hidden">
       <div
         className="relative mx-auto w-full max-w-[375px] overflow-hidden rounded-[20px]"
         style={sectionStyle}
@@ -266,7 +278,10 @@ function MobileGamesSection() {
 
 function DesktopGamesSection() {
   return (
-    <section className="hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]">
+  <section
+  id="games-desktop"
+  className="scroll-mt-[120px] scroll-mt-[110px] hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]"
+>
       <div
         className="relative mx-auto w-full max-w-[1700px] overflow-hidden rounded-[40px]"
         style={sectionStyle}
