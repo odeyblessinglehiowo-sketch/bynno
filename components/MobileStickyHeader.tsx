@@ -77,11 +77,10 @@ export default function MobileStickyHeader() {
           </div>
         </header>
 
-        <div className="flex flex-col gap-[10px] bg-white px-[1px]">
-          <div className="h-[1px] w-full bg-[#FE001A]/50" />
+        
           <div className="h-[1px] w-full bg-[#FE001A]/50" />
         </div>
       </div>
-    </div>
+   
   );
 }
