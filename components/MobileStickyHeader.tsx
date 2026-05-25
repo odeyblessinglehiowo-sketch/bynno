@@ -78,7 +78,7 @@ export default function MobileStickyHeader() {
         </header>
 
         
-          <div className="h-[1px] w-full bg-[#FE001A]/50" />
+          
         </div>
       </div>
    
