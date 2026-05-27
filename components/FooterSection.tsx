@@ -255,9 +255,7 @@ function MobileFooterSection() {
 
 function DesktopFooterSection() {
   return (
-    <footer 
-    id="community-desktop"
-    className="scroll-mt-[120px] relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
+    <footer className="scroll-mt-[120px] relative hidden overflow-hidden bg-white text-[#2B2B2B] lg:block">
       <div className="pointer-events-none absolute inset-0" style={footerGlowStyle} />
 
       <div className="relative mx-auto w-full max-w-[1700px] px-[40px] py-[56px] lg:px-[80px] lg:py-[40px]">

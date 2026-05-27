@@ -5,14 +5,6 @@ import { useRef } from "react";
 import type { RefObject } from "react";
 import { motion } from "framer-motion";
 
-const desktopNavItems = [
-  { label: "Home", href: "#top-desktop" },
-  { label: "Guides", href: "#guides-desktop" },
-  { label: "Trading", href: "#trading-desktop" },
-  { label: "Games", href: "#games-desktop" },
-  { label: "Community", href: "#community-desktop" },
-];
-
 type LessonCard = {
   title: string;
   badgeSrc: string;
@@ -227,9 +219,7 @@ function MobileLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
 
 function DesktopLessonsSection({ scrollCards, scrollerRef }: SectionProps) {
   return (
-    <section 
-    id="trading-desktop"
-   className="scroll-mt-[120px] hidden overflow-hidden bg-white py-[56px] md:py-[8px] lg:block">
+    <section className="scroll-mt-[120px] hidden overflow-hidden bg-white py-[56px] md:py-[8px] lg:block">
       <div className="mx-auto w-full max-w-[1900px] px-[20px] md:px-[40px] xl:px-[25px]">
         <div className="flex flex-col gap-[28px] lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-[1550px]">

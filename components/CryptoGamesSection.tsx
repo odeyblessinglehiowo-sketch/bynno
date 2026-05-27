@@ -278,9 +278,7 @@ function MobileGamesSection() {
 
 function DesktopGamesSection() {
   return (
-  <section
-  id="games-desktop"
-  className="scroll-mt-[120px] scroll-mt-[110px] hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]"
+  <section className="scroll-mt-[120px] hidden bg-white px-[20px] py-[24px] sm:px-[28px] sm:py-[32px] lg:block lg:px-[40px] lg:py-[40px]"
 >
       <div
         className="relative mx-auto w-full max-w-[1700px] overflow-hidden rounded-[40px]"

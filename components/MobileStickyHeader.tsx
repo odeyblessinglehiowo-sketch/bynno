@@ -33,7 +33,7 @@ export default function MobileStickyHeader() {
                 <span className="h-[3px] w-[20px] rounded-full bg-[#000510]" />
               </button>
 
-              <a href="#top-desktop" aria-label="bynno home" className="relative z-20 ml-[38px]">
+              <a href="#top-mobile" aria-label="bynno home" className="relative z-20 ml-[38px]">
                 <Image
                   src="/icons/bynno-logo.png"
                   alt="Bynno - Learn Crypto"

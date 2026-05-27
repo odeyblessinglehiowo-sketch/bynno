@@ -1,10 +1,9 @@
-
 "use client";
 
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import { useRef } from "react";
 import FeatureCards from "@/components/FeatureCards";
 import FullOutlineSection from "@/components/FullOutlineSection";
 import VideoLibrarySection from "@/components/VideoLibrarySection";
@@ -16,39 +15,35 @@ import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 import MobileStickyHeader from "@/components/MobileStickyHeader";
 
-const desktopNavItems = [
-  { label: "Home", href: "#top-desktop" },
-  { label: "Guides", href: "#guides-desktop" },
-  { label: "Trading", href: "#trading-desktop" },
-  { label: "Games", href: "#games-desktop" },
-  { label: "Community", href: "#community-desktop" },
+const navItems = [
+  { label: "Home", href: "#top" },
+  { label: "Guides", href: "#guides" },
+  { label: "Trading", href: "#trading" },
+  { label: "Games", href: "#games" },
+  { label: "Community", href: "#community" },
 ];
 
 export default function Page() {
   return (
     <>
       <div className="lg:hidden">
-  <MobileStickyHeader />
-  <MobileHeroSection />
-  <FeatureCards />
-  <FullOutlineSection />
-  <VideoLibrarySection />
-  <LessonsCarouselSection />
-  <TradingLessonsSection />
-  <CryptoGamesSection />
-  <BonusResourcesSection />
-  <FaqSection />
-  <FooterSection />
-</div>
-
-
+        <MobileStickyHeader />
+        <MobileHeroSection />
+        <FeatureCards />
+        <FullOutlineSection />
+        <VideoLibrarySection />
+        <LessonsCarouselSection />
+        <TradingLessonsSection />
+        <CryptoGamesSection />
+        <BonusResourcesSection />
+        <FaqSection />
+        <FooterSection />
+      </div>
 
       <main className="hidden min-h-screen bg-white text-[#000510] lg:block">
         <DesktopHeader />
 
-        <section
-          id="top-desktop"
-          className="mx-auto w-full max-w-[1700px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
+        <section id="top" className="scroll-mt-[120px] mx-auto w-full max-w-[1700px] px-[24px] pb-10 pt-6 sm:px-[36px] lg:px-[60px] lg:pb-12 lg:pt-7.5"
         >
           <div className="grid items-start gap-8 lg:grid-cols-[1.2fr_0.95fr] lg:gap-14">
             <div className="relative isolate h-[545px] overflow-hidden rounded-[40px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_19%,#530008_100%)] px-8 pt-[20px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)] lg:px-9 lg:py-10">
@@ -110,7 +105,9 @@ export default function Page() {
                   type="button"
                   className="appearance-none h-[53px] w-[174px] rounded-[8px] bg-[#FE001A] text-[18px] font-bold text-white [font-smoothing:auto]"
                 >
-                  <span className="font-bold tracking-[0.05em]">Start Learning</span>
+                  <span className="font-bold tracking-[0.05em]">
+                    Start Learning
+                  </span>
                 </button>
               </div>
 
@@ -122,22 +119,37 @@ export default function Page() {
         </section>
 
         <FeatureCards />
-        <FullOutlineSection />
-        <VideoLibrarySection />
-        <LessonsCarouselSection />
-        <TradingLessonsSection />
-        <CryptoGamesSection />
-        <BonusResourcesSection />
-        <FaqSection />
-        <FooterSection />
-      </main>
+
+<div id="guides">
+  <FullOutlineSection />
+</div>
+
+<VideoLibrarySection />
+
+<div id="trading">
+  <LessonsCarouselSection />
+</div>
+
+<TradingLessonsSection />
+
+<div id="games">
+  <CryptoGamesSection />
+</div>
+
+<BonusResourcesSection />
+<FaqSection />
+
+<div id="community">
+  <FooterSection />
+</div>
+
+</main>
     </>
   );
 }
 
 function DesktopHeader() {
   return (
-    
     <header className="sticky top-0 z-50 bg-white">
       <div className="mx-auto grid h-[99px] w-full max-w-[1800px] grid-cols-[auto_1fr_auto] items-center px-[40px] xl:px-[72px] 2xl:px-[94px]">
         <a
@@ -156,10 +168,22 @@ function DesktopHeader() {
         </a>
 
         <nav className="mt-[-30px] flex items-center justify-center gap-10 xl:justify-start xl:pl-24 2xl:gap-15">
-  {desktopNavItems.map((item) => (
+  {navItems.map((item) => (
     <a
       key={item.label}
       href={item.href}
+      onClick={(e) => {
+  e.preventDefault();
+  const main = document.querySelector("main") as HTMLElement;
+  const target = main?.querySelector(item.href) as HTMLElement;
+  if (!target) return;
+  const offset = 120;
+  window.scrollTo({
+    top: target.offsetTop - offset,
+    behavior: "smooth",
+  });
+  window.history.pushState(null, "", item.href);
+}}
       className="
         relative w-fit
         text-[18px]
@@ -227,84 +251,81 @@ function DesktopHeader() {
   );
 }
 
-
-  function MobileHeroSection() {
+function MobileHeroSection() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <section
+      id="top-mobile"
+      className="relative z-0 mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[38px]"
+    >
+      <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
+        <MobileHeroGlowArt />
 
-      <section
-  id="top-mobile"
-  className="relative z-0 mx-auto w-full max-w-[495px] px-[20px] pb-[20px] pt-[38px]"
->
-        <div className="relative isolate overflow-hidden rounded-[28px] bg-[linear-gradient(180deg,#FE001A_0%,#C10013_24%,#530008_100%)] px-[22px] pb-[28px] pt-[22px] text-white shadow-[0_18px_50px_rgba(63,0,6,0.16)]">
-          <MobileHeroGlowArt />
+        <div className="relative z-10 max-w-[389px] rounded-[10px]">
+          <h1 className="text-[35px] font-bold leading-[1.02] tracking-[-0.01em]">
+            Understand Crypto
+            <br />
+            Finally!
+          </h1>
 
-          <div className="relative z-10 max-w-[389px] rounded-[10px]">
-            <h1 className="text-[35px] font-bold leading-[1.02] tracking-[-0.01em]">
-              Understand Crypto
-              <br />
-              Finally!
-            </h1>
-
-            <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
-              A clear, easy course that makes sense of it all.
-            </p>
-          </div>
-
-          <div className="relative z-10 mt-[48px] flex items-center gap-[14px]">
-            <Image
-              src="/icons/certificate-white.png"
-              alt="Certificate icon"
-              width={40}
-              height={40}
-              className="h-[40px] w-[40px] shrink-0 object-contain"
-            />
-
-            <p className="text-[20px] font-semibold leading-none tracking-[0.04em]">
-              Certificate Included
-            </p>
-          </div>
-        </div>
-
-        <div className="pt-[38px]">
-          <h2 className="max-w-[435px] text-[46px] font-bold leading-[1.02] tracking-[0.02em]">
-            Join 1,000+ crypto learners.
-          </h2>
-
-          <div className="mt-[38px] flex flex-col gap-[12px]">
-            <label className="flex h-[42px] items-center gap-[14px] rounded-[8px] border border-black/10 bg-white px-[14px] shadow-[0_10px_28px_rgba(0,0,0,0.05)]">
-              <Image
-                src="/icons/email.png"
-                alt="Email icon"
-                width={24}
-                height={24}
-                className="h-[24px] w-[24px] shrink-0 object-contain"
-              />
-
-              <input
-                type="email"
-                placeholder="Type your email address here"
-                className="w-full bg-transparent text-[12px] font-medium outline-none placeholder:text-[#444548]"
-              />
-            </label>
-
-            <button
-              type="button"
-              className="h-[42px] w-full rounded-[8px] bg-[#FE001A] text-[14px] font-bold text-white transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
-            >
-              <span className="text-[14px] font-semibold tracking-[0.05em]">
-                Start Learning
-              </span>
-            </button>
-          </div>
-
-          <p className="mx-auto mt-[10px] max-w-[290px] text-center text-[10px] font-light italic leading-[1.35] text-[#444548]">
-            Sign up now and collect free coins. Cost $0 to learn.
+          <p className="mt-[34px] max-w-[309px] text-[20px] font-semibold leading-[1.11] tracking-[0.03em]">
+            A clear, easy course that makes sense of it all.
           </p>
         </div>
-      </section>
-    
+
+        <div className="relative z-10 mt-[48px] flex items-center gap-[14px]">
+          <Image
+            src="/icons/certificate-white.png"
+            alt="Certificate icon"
+            width={40}
+            height={40}
+            className="h-[40px] w-[40px] shrink-0 object-contain"
+          />
+
+          <p className="text-[20px] font-semibold leading-none tracking-[0.04em]">
+            Certificate Included
+          </p>
+        </div>
+      </div>
+
+      <div className="pt-[38px]">
+        <h2 className="max-w-[435px] text-[46px] font-bold leading-[1.02] tracking-[0.02em]">
+          Join 1,000+ crypto learners.
+        </h2>
+
+        <div className="mt-[38px] flex flex-col gap-[12px]">
+          <label className="flex h-[42px] items-center gap-[14px] rounded-[8px] border border-black/10 bg-white px-[14px] shadow-[0_10px_28px_rgba(0,0,0,0.05)]">
+            <Image
+              src="/icons/email.png"
+              alt="Email icon"
+              width={24}
+              height={24}
+              className="h-[24px] w-[24px] shrink-0 object-contain"
+            />
+
+            <input
+              type="email"
+              placeholder="Type your email address here"
+              className="w-full bg-transparent text-[12px] font-medium outline-none placeholder:text-[#444548]"
+            />
+          </label>
+
+          <button
+            type="button"
+            className="h-[42px] w-full rounded-[8px] bg-[#FE001A] text-[14px] font-bold text-white transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]"
+          >
+            <span className="text-[14px] font-semibold tracking-[0.05em]">
+              Start Learning
+            </span>
+          </button>
+        </div>
+
+        <p className="mx-auto mt-[10px] max-w-[290px] text-center text-[10px] font-light italic leading-[1.35] text-[#444548]">
+          Sign up now and collect free coins. Cost $0 to learn.
+        </p>
+      </div>
+    </section>
   );
 }
 
@@ -428,9 +449,7 @@ function HeroGlowArt() {
           ease: "easeInOut",
           repeat: Infinity,
         }}
-      >
-  
-      </motion.div>
+      />
 
       <motion.div
         className="absolute bottom-[20px] right-[70px] h-[340px] w-[340px] rounded-full blur-[80px]"
@@ -476,4 +495,4 @@ function HeroGlowArt() {
       />
     </div>
   );
-} 
+}

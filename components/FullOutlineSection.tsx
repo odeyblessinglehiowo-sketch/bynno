@@ -202,9 +202,7 @@ function MobileFullOutlineSection() {
 
 function DesktopFullOutlineSection() {
   return (
-    <section 
-     id="guides-desktop"
-   className="scroll-mt-[120px] mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
+    <section className="scroll-mt-[120px] mx-auto hidden w-full max-w-[1700px] px-[80px] pt-[2px] pb-[54px] lg:block">
       <div className="max-w-[611px]">
         <motion.p
   initial="hidden"
